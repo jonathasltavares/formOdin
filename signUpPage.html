@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="left_content">
+        <h1>MOITW</h1>
+    </div>
+    <main>
+        <section>
+            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br>Sign up now to get started.</p>
+
+            <p>You know you want to.</p>
+        </section>
+        <section>
+            <form>
+                <fieldset>
+                    <legend>Let's do this!</legend>
+
+                    <label for="first_name">FIRST NAME
+                        <input title="2 letters minimum" pattern="[A-Za-zÀ-ÿ\s]{2,}" class="input" type="text" name="first_name" id="">
+                    </label>
+
+                    <label for="last_name">LAST NAME
+                        <input title="2 letters minimum" pattern="[A-Za-zÀ-ÿ\s]{2,}" type="text" name="last_name" id="">
+                    </label>
+
+                    <label for="email">EMAIL
+                        <input type="email" name="email" id="">
+                    </label>
+
+                    <label pattern="\d{10}" for="phone_number">PHONE NUMBER
+                        <input type="tel"
+                        maxlength="14"
+                        pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$" name="phone_number" id="">
+                    </label>
+
+                    <label for="password">PASSWORD
+                        <input title="Min. 6 characters, 1 capital letter, 1 number" pattern="(?=.*[A-Z])(?=.*\d).{6,}" type="password" name="password" id="">
+                    </label>
+
+                    <label for="confirm_password">CONFIRM PASSWORD
+                        <input pattern="(?=.*[A-Z])(?=.*\d).{6,}" type="password" name="confirm_password" id="">
+                    </label>
+                </fieldset>
+                <button type="submit">Create Account</button>
+                <p class="haveAccount">Already have an account? <a>Log in</a></p>
+            </form>
+        </section>
+        <section></section>
+    </main>
+</body>
+</html>
